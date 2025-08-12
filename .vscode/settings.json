@@ -1,0 +1,50 @@
+{
+    // =================================================================
+    // ESSENTIAL VIM SETTINGS
+    // =================================================================
+    // Disables VS Code's pop-ups when you're typing, so they don't block Vim commands.
+    "editor.suggestOnTriggerCharacters": false,
+    "editor.parameterHints.enabled": false,
+    "editor.hover.enabled": false, // You can re-enable this if you miss it
+
+    // Makes the cursor behave like it does in Vim.
+    "editor.cursorStyle": "line",
+    "editor.cursorBlinking": "solid",
+
+    // Allows for smoother navigation between editor and terminal.
+    "workbench.action.terminal.focus": { "key": "ctrl+j", "when": "editorTextFocus" },
+    "workbench.action.focusActiveEditorGroup": { "key": "ctrl+k", "when": "terminalFocus" },
+
+
+    // =================================================================
+    // PYTHON DEVELOPMENT SETTINGS
+    // =================================================================
+    // Selects the official Python extension's tools for code analysis.
+    "python.languageServer": "Pylance",
+
+    // Automatically formats your code with the 'black' formatter on save.
+    "editor.formatOnSave": true,
+    "python.formatting.provider": "black",
+
+    // Enables 'linting' to catch errors and bad practices.
+    "python.linting.enabled": true,
+    "python.linting.pylintEnabled": false,
+    "python.linting.flake8Enabled": true,
+
+    // Enables text wrapping so you don't have to scroll horizontally.
+    "editor.wordWrap": "on",
+
+
+    // =================================================================
+    // GENERAL QUALITY OF LIFE
+    // =================================================================
+    // Shows the file explorer by default.
+    "workbench.startupEditor": "newUntitledFile",
+    "explorer.compactFolders": false,
+
+    // Shows a vertical line at 88 characters to guide your line length.
+    "editor.rulers": [88],
+
+    "workbench.colorTheme": "Default Dark+", // Or your preferred theme
+    "terminal.integrated.defaultProfile.linux": "wsl"
+}
