@@ -1,0 +1,5 @@
+print(" Welcome to the BMI Calculator \n")
+usr_height = float(input("Please enter your height in meters: "))
+usr_weight = float(input("Please enter your weight in kilograms: "))
+usr_bmi = usr_weight / (usr_height ** 2)
+print(f"Your BMI is: {usr_bmi:.2f}")
