@@ -27,3 +27,28 @@
   - Only two possible values: `True` and `False`. (Note the capitalization).
   - Crucial for logic and control flow (which we'll cover later).
 
+---
+
+### Mathematical Operations
+- **Addition:** `+`
+- **Subtraction:** `-`
+- **Multiplication:** `*`
+- **Division:** `/`
+  - **Key Note:** Always results in a `float`, even if the division is exact (e.g., `6 / 3` results in `2.0`).
+- **Floor Division (Integer Division):** `//`
+  - Performs division and **truncates** (removes) the decimal part, resulting in an `int`.
+  - Example: `5 // 3` results in `1`. (Careful: this is NOT standard rounding).
+- **Exponentiation (Power):** `**`
+  - Example: `2 ** 3` (2 to the power of 3)
+
+### Operator Precedence (PEMDAS)
+- The order in which mathematical operations are evaluated:
+  1. **P**arentheses `()`
+  2. **E**xponents `**`
+  3. **M**ultiplication `*` and **D**ivision `/`
+  4. **A**ddition `+` and **S**ubtraction `-`
+- **Evaluation Order:** Multiplication/Division and Addition/Subtraction are evaluated from **left to right** if they share the same precedence level.
+- Use parentheses `()` to explicitly define the order of operations.
+
+---
+
