@@ -52,3 +52,46 @@
 
 ---
 
+### Number Manipulation & F-Strings
+
+#### The `round()` function
+- Used to round a number to the nearest integer or to a specified number of decimal places.
+- **Syntax:**
+  - `round(number)`: Rounds to the nearest whole number.
+    - `round(8 / 3)` -> `3`
+  - `round(number, ndigits)`: Rounds to `ndigits` decimal places.
+    - `round(2.6666, 2)` -> `2.67`
+- **Pro Note (Banker's Rounding):** In Python 3, `round(2.5)` results in `2` and `round(3.5)` results in `4`. It rounds to the nearest *even* number for `.5` cases. This is a subtle but important detail in data science.
+
+#### Augmented Assignment Operators
+- Shorthand operators to modify a variable's value in place.
+- Makes code more concise and readable.
+- `score = score + 1` becomes `score += 1`
+- **Common Operators:**
+  - `+=` (Addition)
+  - `-=` (Subtraction)
+  - `*=` (Multiplication)
+  - `/=` (Division)
+
+#### F-Strings (Formatted String Literals)
+- The modern, clean, and preferred way to mix variables with strings.
+- **Syntax:** Start the string with the letter `f` before the quotes. Place variables inside curly braces `{}`.
+- **Main Advantage:** Python handles the type conversion automatically. No more `TypeError` or manual `str()` conversion.
+- **Example:**
+  ```python
+  score = 10
+  height = 1.75
+  is_winning = True
+  print(f"Your score is {score}, your height is {height}, and winning status is {is_winning}.")
+
+## Comparisson between round() function and f"(value:.2f)" String Formatting
+
+Feature:	round(value, 2)	f"{value:.2f}"
+Purpose:	Mathematical operation	String formatting / Presentation
+Return Type:	float or int	str
+Where to Use:	Can be used anywhere (calculations, variables)	Only inside an f-string or .format() method
+Behavior:	Actually changes the numerical value	Changes only the text representation
+Padding:	Does NOT pad with zeros. round(12.5, 2) is 12.5	Pads with zeros. f"{12.5:.2f}" is "12.50"
+
+  ---
+
